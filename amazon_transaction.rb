@@ -9,8 +9,8 @@ class AmazonTransaction
     @items = []
   end
   
-  def add_item(name,price,number)
-    
+  def add_item(name,price,quantity)
+    @items << 
   end
 
 
