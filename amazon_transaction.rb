@@ -4,4 +4,4 @@ class AmazonTransaction
 end 
 
 def amazon 
-  
+end 
