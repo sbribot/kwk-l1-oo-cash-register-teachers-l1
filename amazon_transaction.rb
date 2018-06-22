@@ -1,7 +1,8 @@
 # Code your cash register here!
 
 class AmazonTransaction
-end 
+  attr_accessor :subtotal, :discount, :items, 
 
-def amazon 
+
+
 end 
