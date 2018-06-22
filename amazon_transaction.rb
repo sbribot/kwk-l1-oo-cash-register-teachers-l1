@@ -10,9 +10,19 @@ class AmazonTransaction
   end
   
   def add_item(name,price,quantity)
-    @items << 
+    @items << name
+    @total = @total + (price * quantity)
   end
 
-
+  def add_discount(percentage)
+    @discount = (100-percentage)/100*@total
+  end
+  
+  def show_receipt()
+    puts @items
+    puts "Subtotal: $#{@total}"
+    puts "Discount: $#{@discount}"
+    puts "Amount Due: $" + (@total - @discount)
+  end
 
 end 
