@@ -28,6 +28,8 @@ class AmazonTransaction
 end 
 
 transaction_one = AmazonTransaction.new 
-puts transaction_one
 
+transaction_one.add_item("pajamas", 10.99, 1)
+
+transaction_one.show_receipt
 
