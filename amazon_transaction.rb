@@ -26,3 +26,8 @@ class AmazonTransaction
   end
 
 end 
+
+transaction_one = AmazonTransaction.new 
+puts transaction_one
+
+
