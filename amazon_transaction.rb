@@ -24,6 +24,10 @@ class AmazonTransaction
     puts "Discount: $#{@discount}"
     puts "Amount Due: $#{(@total - @discount)}"
   end
+  
+  def print_all_items
+    @items
+  end 
 
 end 
 
@@ -32,4 +36,5 @@ transaction_one = AmazonTransaction.new
 transaction_one.add_item("pajamas", 10.99, 1)
 
 transaction_one.show_receipt
+transaction_one.print_all_items
 
