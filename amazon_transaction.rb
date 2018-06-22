@@ -3,3 +3,5 @@
 class AmazonTransaction
 end 
 
+def amazon 
+  
