@@ -3,6 +3,8 @@
 class AmazonTransaction
   attr_accessor :subtotal, :discount, :items
   
+  @@items = []
+  
   def initialize
     @total = 0
     @discount = 0 
