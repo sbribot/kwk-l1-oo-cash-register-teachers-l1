@@ -22,7 +22,7 @@ class AmazonTransaction
     puts @items
     puts "Subtotal: $#{@total}"
     puts "Discount: $#{@discount}"
-    puts "Amount Due: $" + (@total - @discount)
+    puts "Amount Due: $#{(@total - @discount)}"
   end
 
 end 
