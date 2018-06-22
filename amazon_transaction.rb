@@ -3,12 +3,13 @@
 class AmazonTransaction
   attr_accessor :subtotal, :discount, :items
   
-  @@items = []
+  @@number_of_transactions = 0
   
   def initialize
     @total = 0
     @discount = 0 
     @items = []
+    @@number_of_transactions += 1
   end
   
   def add_item(name,price,quantity)
@@ -27,16 +28,14 @@ class AmazonTransaction
     puts "Amount Due: $#{(@total - @discount)}"
   end
   
-  def print_all_items
-    @items
-  end 
 
 end 
 
-transaction_one = AmazonTransaction.new 
+transaction_one = AmazonTransaction.new
 
 transaction_one.add_item("pajamas", 10.99, 1)
 
+
 transaction_one.show_receipt
-transaction_one.print_all_items
+
 
